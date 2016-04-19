@@ -673,7 +673,7 @@ def main():
     for attr in vcal_txt_one + vcal_txt_many:
         calendar_add_parser.add_argument('--set-'+attr, help='Set '+attr)
 
-    calendar_add_parser.add_argument('--whole-day', help='Whole day event.', action='store_true', default=False)
+    calendar_add_parser.add_argument('--whole-day', help='Whole-day event', action='store_true', default=False)
 
     calendar_addics_parser = calendar_subparsers.add_parser('addics')
     calendar_addics_parser.add_argument('--file', help="ICS file to upload", default='-')
